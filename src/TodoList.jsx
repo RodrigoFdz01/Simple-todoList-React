@@ -29,22 +29,33 @@ function TodoList() {
   };
 
   return (
-    <div>
+    <div className="container">
+      <h2>Todo List</h2>
       <form onSubmit={handleSubmit}>
-        <input
-          name="text"
-          value={textInput}
-          type="text"
-          placeholder="todo..."
-          onChange={handleChange}
-        />
-        <button>Add</button>
-
+        <div class="input-group mb-3">
+          <input
+            class="form-control"
+            name="text"
+            value={textInput}
+            type="text"
+            placeholder="todo..."
+            onChange={handleChange}
+          />
+          <button className="btn btn-dark" type="submit">
+            Add
+          </button>
+        </div>
         <ul>
           {tarea.map((e, index) => (
             <li key={index}>
+              <span>{index + 1} : </span>
               {e}
-              <button onClick={() => deleteTarea(index)}>[ X]</button>
+              <button
+                className="btn btn-primary"
+                onClick={() => deleteTarea(index)}
+              >
+                Delete
+              </button>
             </li>
           ))}
         </ul>
