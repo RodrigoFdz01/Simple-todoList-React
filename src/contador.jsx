@@ -19,7 +19,7 @@ export default function contador() {
       <button onClick={reset}>Reset</button>
 
       <button onClick={addmenos}>-</button>
-      <button onClick={addmas}>-</button>
+      <button onClick={addmas}>+</button>
     </div>
   );
 }

@@ -1,14 +1,12 @@
 import "./styles.css";
-//import Contador from "./contador.jsx";
+import Contador from "./contador.jsx";
 import Todo from "./TodoList";
-//import Modicador from "./modificador";
+
 export default function App() {
   return (
     <>
+      <Contador />
       <Todo />
     </>
-    /*<div className="App">
-      <Contador />
-    </div>*/
   );
 }

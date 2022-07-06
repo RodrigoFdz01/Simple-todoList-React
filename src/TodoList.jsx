@@ -32,9 +32,9 @@ function TodoList() {
     <div className="container">
       <h2>Todo List</h2>
       <form onSubmit={handleSubmit}>
-        <div class="input-group mb-3">
+        <div className="input-group mb-3">
           <input
-            class="form-control"
+            className="form-control"
             name="text"
             value={textInput}
             type="text"
