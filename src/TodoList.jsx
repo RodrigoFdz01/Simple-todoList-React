@@ -40,6 +40,7 @@ function TodoList() {
             type="text"
             placeholder="todo..."
             onChange={handleChange}
+            autoFocus
           />
           <button className="btn btn-dark" type="submit">
             Add
