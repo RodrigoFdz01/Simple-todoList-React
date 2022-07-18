@@ -30,7 +30,7 @@ function TodoList() {
 
   return (
     <div className="container">
-      <h2>Todo List</h2>
+      <h2 className="text-center mt-3">Todo List</h2>
       <form onSubmit={handleSubmit}>
         <div className="input-group mb-3">
           <input
@@ -46,13 +46,13 @@ function TodoList() {
             Add
           </button>
         </div>
-        <ul>
+        <ul className="">
           {tarea.map((e, index) => (
-            <li key={index}>
+            <li key={index} className="m-3">
               <span>{index + 1} : </span>
               {e}
               <button
-                className="btn btn-primary"
+                className="btn btn-primary p-2"
                 onClick={() => deleteTarea(index)}
               >
                 Delete
