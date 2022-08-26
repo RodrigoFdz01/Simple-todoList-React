@@ -28,6 +28,7 @@ function TodoList() {
     setTarea(tarea.filter((e, index) => index !== id));
   };
 
+  //if (!tarea.length) return " loading...";
   return (
     <div className="container">
       <h2 className="text-center mt-3">Todo List</h2>
@@ -50,7 +51,7 @@ function TodoList() {
           {tarea.map((e, index) => (
             <li key={index} className="m-3">
               <span>{index + 1} : </span>
-              {e}
+              {e}.
               <button
                 className="btn btn-primary p-2"
                 onClick={() => deleteTarea(index)}
